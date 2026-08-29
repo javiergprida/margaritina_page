@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Margaritina: Un refugio de bienestar y estética integral. Especialistas en relajación, cuidado facial, corporal y manicura en un ambiente de calma y exclusividad.">
+    <title>Margaritina - Refugio de Bienestar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar fade-in">
+        <div class="logo">
+            <img src="img/logo.png" alt="Margaritina Logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#reserva">Reserva</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#" class="btn-primary btn-general">RESERVAR CITA</a>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header id="inicio" class="hero fade-in" style="background-image: linear-gradient(to bottom, rgba(249, 248, 246, 0.3), rgba(249, 248, 246, 1)), url('img/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1>BIENVENIDA A TU REFUGIO DE BIENESTAR.</h1>
+            <p>Donde el tiempo se detiene y tú eres el centro.</p>
+            <a href="#" class="btn-primary btn-general">INICIA TU VIAJE DE CALMA</a>
+            
+            <!-- Mensajes Reflexivos Dinámicos -->
+            <div id="reflective-message" class="reflective-msg"></div>
+        </div>
+    </header>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="about section-spacing fade-in">
+        <div class="about-text">
+            <h2>TU SEGUNDO HOGAR</h2>
+            <p>Creemos que la verdadera belleza nace de la paz interior. Hemos diseñado cada rincón de nuestro centro (Margaritina) para que te sientas segura, cuidada y totalmente bienvenida.</p>
+            <p>Pasa, reconecta.</p>
+            <a href="https://wa.me/5491123585000?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20el%20centro%20Margaritina." target="_blank" class="btn-primary">MÁS INFO</a>
+        </div>
+        <div class="about-image">
+            <div class="blob-mask blob-1">
+                <img src="img/local-interior.jpg" alt="Interior Margaritina" class="real-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios y Experiencias Integrales -->
+    <section id="servicios" class="services section-spacing fade-in">
+        <div class="services-header">
+            <h2>EXPERIENCIAS DE CUIDADO</h2>
+            <p class="subtitle">Explora nuestros tratamientos y agenda tu momento</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Bloque 1: Mirada y Rostro -->
+            <div class="service-card blob-2 bg-mirada">
+                <div class="circle-img">
+                    <img src="img/service-lashes.jpg" alt="Mirada y Rostro">
+                </div>
+                <h3>Mirada y Rostro</h3>
+                <p>Realza tu expresión natural con delicadeza.</p>
+                <div class="service-list">
+                    <button class="btn-service" data-service="Lifting de pestañas">Lifting de pestañas</button>
+                    <button class="btn-service" data-service="Laminado de cejas">Laminado de cejas</button>
+                </div>
+            </div>
+
+            <!-- Bloque 2: Manos y Pies -->
+            <div class="service-card blob-3 bg-manicure">
+                <div class="circle-img">
+                    <img src="img/service-manicure.jpg" alt="Manicuría y Pedicuría">
+                </div>
+                <h3>Manos y Pies</h3>
+                <p>Cuidado integral y estética para tus extremidades.</p>
+                <div class="service-list light-text">
+                    <button class="btn-service" data-service="Manicuría">Manicuría</button>
+                    <button class="btn-service" data-service="Pedicura">Pedicura</button>
+                    <button class="btn-service" data-service="Podología">Podología</button>
+                </div>
+            </div>
+
+            <!-- Columna Tarjetas Masajes y Depilación -->
+            <div class="service-column">
+                <div class="service-card-small blob-4 solid-green">
+                    <div class="circle-img-small">
+                        <img src="img/service-massage.jpg" alt="Masajes y Bienestar">
+                    </div>
+                    <div class="service-info">
+                        <h3>Bienestar Corporal</h3>
+                        <div class="service-sublist">
+                            <button class="btn-service" data-service="Masaje descontracturante">Masajes</button>
+                            <button class="btn-service" data-service="Reflexología">Reflexología</button>
+                            <button class="btn-service" data-service="Drenaje linfático">Drenaje / Reiki</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card-small blob-5 solid-terracota-dark">
+                    <div class="circle-img-small img-tension">
+                        <img src="img/service-wax.jpg" alt="Depilación Sistema Español">
+                    </div>
+                    <div class="service-info">
+                        <h3>Depilación (Español)</h3>
+                        <div class="service-sublist white-text">
+                            <button class="btn-service" data-service="Depilación Facial (Rostro y Bozo)">Rostro y Bozo</button>
+                            <button class="btn-service" data-service="Depilación Corporal (Axila y Cejas)">Axila y Cejas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="reserva" class="final-cta section-spacing fade-in">
+        <p class="subtitle">VOCES DE CALMA</p>
+        <h2>¿LISTA PARA VOLVER A TI MISMA?</h2>
+        <p>Un momento de paz te espera.</p>
+        <a href="#" class="btn-primary btn-general">AGENDAR MI CITA</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer fade-in">
+        <div class="footer-col">
+            <h4>CONTACTO</h4>
+            <p>+54 11 235 850</p>
+            <p>info@margaritina.com</p>
+            <p>www.margaritina.com</p>
+        </div>
+        <div class="footer-col logo-footer">
+            <div class="logo-circle">
+                <img src="img/logo.png" alt="Margaritina Logo Footer" class="logo-img-footer">
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>SOCIALES</h4>
+            <p>Instagram / Facebook</p>
+        </div>
+        <div class="footer-col">
+            <h4>HORARIO</h4>
+            <p>Lunes: 9:00 am - 3:00 pm</p>
+            <p>Jueves: 9:00 am - 3:00 pm</p>
+            <p>Miércoles: 9:00 am - 3:00 pm</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE RESERVA -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalTitle">Agendar Cita</h3>
+            
+            <div id="serviceSelection" class="modal-group">
+                <label>¿Qué servicios te gustaría? (Puedes elegir varios)</label>
+                <!-- Selector Múltiple (Desplegable) -->
+                <select id="serviceDropdown">
+                    <option value="" disabled selected>Selecciona un servicio...</option>
+                    <optgroup label="Mirada y Rostro">
+                        <option value="Lifting de pestañas">Lifting de pestañas</option>
+                        <option value="Laminado de cejas">Laminado de cejas</option>
+                    </optgroup>
+                    <optgroup label="Manos y Pies">
+                        <option value="Manicuría">Manicuría</option>
+                        <option value="Pedicura">Pedicura</option>
+                        <option value="Podología">Podología</option>
+                    </optgroup>
+                    <optgroup label="Bienestar Corporal">
+                        <option value="Masaje descontracturante">Masaje descontracturante</option>
+                        <option value="Reflexología">Reflexología</option>
+                        <option value="Drenaje linfático">Drenaje linfático</option>
+                        <option value="Reiki">Reiki</option>
+                    </optgroup>
+                    <optgroup label="Depilación">
+                        <option value="Depilación Facial">Depilación Facial</option>
+                        <option value="Depilación Corporal">Depilación Corporal</option>
+                    </optgroup>
+                </select>
+                <!-- Contenedor para mostrar los servicios elegidos como etiquetas -->
+                <div id="selectedServicesTags" class="tags-container"></div>
+            </div>
+
+            <div class="modal-group">
+                <label for="userName">Tu Nombre:</label>
+                <input type="text" id="userName" placeholder="Ej: Lucía">
+            </div>
+            
+            <button id="sendWhatsapp" class="btn-primary">Continuar a WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
