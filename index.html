@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Margaritina: Un refugio de bienestar y estética integral. Especialistas en relajación, cuidado facial, corporal y manicura en un ambiente de calma y exclusividad.">
     <title>Margaritina - Refugio de Bienestar</title>
+    
+    <!-- Tipografía Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navegación -->
+    <!-- BARRA DE NAVEGACIÓN -->
     <nav class="navbar fade-in">
         <div class="logo">
             <img src="img/logo.png" alt="Margaritina Logo" class="logo-img">
@@ -22,22 +27,24 @@
             <li><a href="#reserva">Reserva</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#" class="btn-primary btn-general">RESERVAR CITA</a>
+        <a href="#reserva" class="btn-primary btn-general">RESERVAR CITA</a>
     </nav>
 
-    <!-- Sección Hero -->
-    <header id="inicio" class="hero fade-in" style="background-image: linear-gradient(to bottom, rgba(249, 248, 246, 0.3), rgba(249, 248, 246, 1)), url('img/hero-bg.jpg');">
+    <!-- SECCIÓN HERO -->
+    <header id="inicio" class="hero fade-in" style="background-image: linear-gradient(to bottom, rgba(249, 248, 246, 0.4), rgba(249, 248, 246, 1)), url('img/hero-bg.jpg');">
         <div class="hero-content">
             <h1>BIENVENIDA A TU REFUGIO DE BIENESTAR.</h1>
             <p>Donde el tiempo se detiene y tú eres el centro.</p>
-            <a href="#" class="btn-primary btn-general">INICIA TU VIAJE DE CALMA</a>
+            
+            <!-- Aquí está tu botón restaurado -->
+            <a href="#reserva" class="btn-primary btn-general">INICIA TU VIAJE DE CALMA</a>
             
             <!-- Mensajes Reflexivos Dinámicos -->
-            <div id="reflective-message" class="reflective-msg"></div>
+            <p id="reflective-message" class="reflective-msg" style="transition: opacity 1s; opacity: 0;"></p>
         </div>
     </header>
 
-    <!-- Sección Nosotros -->
+    <!-- SECCIÓN NOSOTROS -->
     <section id="nosotros" class="about section-spacing fade-in">
         <div class="about-text">
             <h2>TU SEGUNDO HOGAR</h2>
@@ -52,7 +59,7 @@
         </div>
     </section>
 
-    <!-- Sección Servicios y Experiencias Integrales -->
+    <!-- SECCIÓN SERVICIOS -->
     <section id="servicios" class="services section-spacing fade-in">
         <div class="services-header">
             <h2>EXPERIENCIAS DE CUIDADO</h2>
@@ -60,6 +67,7 @@
         </div>
         
         <div class="services-grid">
+            
             <!-- Bloque 1: Mirada y Rostro -->
             <div class="service-card blob-2 bg-mirada">
                 <div class="circle-img">
@@ -87,7 +95,7 @@
                 </div>
             </div>
 
-            <!-- Columna Tarjetas Masajes y Depilación -->
+            <!-- Columna Derecha: Masajes y Depilación -->
             <div class="service-column">
                 <div class="service-card-small blob-4 solid-green">
                     <div class="circle-img-small">
@@ -110,8 +118,8 @@
                     <div class="service-info">
                         <h3>Depilación (Español)</h3>
                         <div class="service-sublist white-text">
-                            <button class="btn-service" data-service="Depilación Facial (Rostro y Bozo)">Rostro y Bozo</button>
-                            <button class="btn-service" data-service="Depilación Corporal (Axila y Cejas)">Axila y Cejas</button>
+                            <button class="btn-service" data-service="Depilación Facial">Rostro y Bozo</button>
+                            <button class="btn-service" data-service="Depilación Corporal">Axila y Cejas</button>
                         </div>
                     </div>
                 </div>
@@ -119,36 +127,36 @@
         </div>
     </section>
 
-    <!-- CTA Final -->
+    <!-- CTA FINAL -->
     <section id="reserva" class="final-cta section-spacing fade-in">
         <p class="subtitle">VOCES DE CALMA</p>
         <h2>¿LISTA PARA VOLVER A TI MISMA?</h2>
         <p>Un momento de paz te espera.</p>
-        <a href="#" class="btn-primary btn-general">AGENDAR MI CITA</a>
+        
+        <!-- Aquí está el botón restaurado del final -->
+        <a href="#reserva" class="btn-primary btn-general">AGENDAR MI CITA</a>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER (Diseño Modificado) -->
     <footer id="contacto" class="footer fade-in">
-        <div class="footer-col">
+        <div class="footer-logo-col">
+            <img src="img/logo.png" alt="Margaritina Logo" class="footer-logo-large">
+        </div>
+        <div class="footer-text-col">
             <h4>CONTACTO</h4>
-            <p>+54 11 235 850</p>
+            <p>+54 9 11 2358-5000</p>
             <p>info@margaritina.com</p>
             <p>www.margaritina.com</p>
         </div>
-        <div class="footer-col logo-footer">
-            <div class="logo-circle">
-                <img src="img/logo.png" alt="Margaritina Logo Footer" class="logo-img-footer">
-            </div>
-        </div>
-        <div class="footer-col">
+        <div class="footer-text-col">
             <h4>SOCIALES</h4>
-            <p>Instagram / Facebook</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
         </div>
-        <div class="footer-col">
+        <div class="footer-text-col">
             <h4>HORARIO</h4>
-            <p>Lunes: 9:00 am - 3:00 pm</p>
-            <p>Jueves: 9:00 am - 3:00 pm</p>
-            <p>Miércoles: 9:00 am - 3:00 pm</p>
+            <p>Lunes, Miércoles y Jueves</p>
+            <p>9:00 am - 3:00 pm</p>
         </div>
     </footer>
 
@@ -160,7 +168,6 @@
             
             <div id="serviceSelection" class="modal-group">
                 <label>¿Qué servicios te gustaría? (Puedes elegir varios)</label>
-                <!-- Selector Múltiple (Desplegable) -->
                 <select id="serviceDropdown">
                     <option value="" disabled selected>Selecciona un servicio...</option>
                     <optgroup label="Mirada y Rostro">
@@ -183,7 +190,6 @@
                         <option value="Depilación Corporal">Depilación Corporal</option>
                     </optgroup>
                 </select>
-                <!-- Contenedor para mostrar los servicios elegidos como etiquetas -->
                 <div id="selectedServicesTags" class="tags-container"></div>
             </div>
 
@@ -192,7 +198,7 @@
                 <input type="text" id="userName" placeholder="Ej: Lucía">
             </div>
             
-            <button id="sendWhatsapp" class="btn-primary">Continuar a WhatsApp</button>
+            <button id="sendWhatsapp" class="btn-primary" style="width: 100%;">Continuar a WhatsApp</button>
         </div>
     </div>
 
