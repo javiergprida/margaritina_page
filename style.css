@@ -281,7 +281,7 @@ p { font-size: 1.1rem; margin-bottom: 1.2rem; }
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform: 0.8s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .fade-in.visible {
     opacity: 1;

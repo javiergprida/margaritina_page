@@ -26,3 +26,18 @@ El diseño utiliza tonos tierra, cálidos y naturales para reflejar la esencia d
 * **JavaScript (Vanilla):** Lógica del lado del cliente para manejo del DOM, modales y etiquetas.
 
 
+Estructura del Proyecto
+Plaintext
+/
+├── index.html        # Estructura principal y contenido
+├── style.css         # Estilos globales y diseño asimétrico
+├── script.js         # Lógica de interacciones
+├── /img              # Recursos gráficos (Logos, fondos, fotos de servicios)
+└── .gitignore        # Reglas de exclusión para documentación interna
+
+Notas de Arquitectura y Seguridad
+Superficie de Ataque Reducida: Arquitectura Client-Side sin conexión directa a base de datos en esta fase inicial.
+
+Despliegue Recomendado: Alojamiento en plataformas estáticas o CDN (como Hostinger, Vercel o Netlify) emparejado con un pipeline automatizado desde la rama principal.
+
+Manejo de Datos Sensibles: Los datos de contacto críticos se gestionan mediante el entorno de despliegue, protegiendo la integridad del frontend frente a modificaciones de terceros.
